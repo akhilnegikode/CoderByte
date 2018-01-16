@@ -1,0 +1,17 @@
+CREATE TABLE Employee (
+
+EmployeeNumber INTEGER PRIMARY KEY AUTOINCREMENT
+
+UNIQUE,
+
+EmployeeName VARCHAR NOT NULL,
+
+Password VARCHAR NOT NULL,
+
+Designation VARCHAR NOT NULL,
+
+ServiceLine VARCHAR NOT NULL,
+
+Role VARCHAR NOT NULL
+
+);
