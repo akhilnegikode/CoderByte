@@ -88,8 +88,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="account\login.component.ts" />
     <TypeScriptCompile Include="app\app.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
+    <TypeScriptCompile Include="employee\employee-index.component.ts" />
+    <TypeScriptCompile Include="home\dashboard.component.ts" />
     <TypeScriptCompile Include="main.ts" />
   </ItemGroup>
   <ItemGroup>
