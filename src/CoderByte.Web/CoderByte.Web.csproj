@@ -68,6 +68,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="account\Content\EmployeeDashboard.css" />
+    <Content Include="account\Content\EmployeeRegistration.css" />
+    <Content Include="account\Content\Login.css" />
+    <Content Include="account\EmployeeDashboard.html" />
+    <Content Include="account\EmployeeRegistration.html" />
+    <Content Include="account\Login.html" />
+    <Content Include="account\Scripts\Login.js" />
     <Content Include="package.json" />
     <None Include="packages.config" />
     <Content Include="tsconfig.json" />
