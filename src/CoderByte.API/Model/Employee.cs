@@ -2,29 +2,16 @@
 {
     public class Employee
     {
-        public void Test(int param)
-        {
-            if (param == 1)
-                OpenWindow();
-            else if (param == 2)
-                CloseWindow();
-            else if (param == 1)  // Noncompliant
-                MoveWindowToTheBackground();
-        }
+        public int EmployeeNumber { get; set; }
 
-        private void MoveWindowToTheBackground()
-        {
-            throw new System.NotImplementedException();
-        }
+        public string EmployeeName { get; set; }
 
-        private void CloseWindow()
-        {
-            throw new System.NotImplementedException();
-        }
+        public string Password { get; set; }
 
-        private void OpenWindow()
-        {
-            throw new System.NotImplementedException();
-        }
+        public string Designation { get; set; }
+
+        public string ServiceLine { get; set; }
+
+        public string Role { get; set; }
     }
 }
