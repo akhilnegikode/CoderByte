@@ -1,11 +1,15 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CoderByte.API.Model.Entities
 {
     public class Employee
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
+
         [Key]
-        public string EmployeeNumber { get; set; }
+        public int EmployeeNumber { get; set; }
 
         public string EmployeeName { get; set; }
 

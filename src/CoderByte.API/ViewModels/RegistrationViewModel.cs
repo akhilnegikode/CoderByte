@@ -7,7 +7,7 @@ namespace CoderByte.API.ViewModels
     [Validator(typeof(RegistrationViewModelValidator))]
     public class RegistrationViewModel
     {
-        public string EmployeeNumber { get; set; }
+        public int EmployeeNumber { get; set; }
 
         public string EmployeeName { get; set; }
 

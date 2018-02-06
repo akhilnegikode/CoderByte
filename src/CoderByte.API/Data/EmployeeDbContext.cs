@@ -18,6 +18,8 @@ namespace CoderByte.API.Data
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Employee>().HasKey(x => x.EmployeeNumber);
 
+            modelBuilder.Entity<Employee>().Property(b => b.Id).HasValueGenerator<Microsoft.EntityFrameworkCore.ValueGeneration.Internal.InMemoryIntegerValueGenerator<int>>();
+
             modelBuilder.Entity<Employee>()
                 .HasOne(x => x.Identity);
         }
