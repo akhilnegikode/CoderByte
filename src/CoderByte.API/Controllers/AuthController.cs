@@ -46,7 +46,7 @@ namespace CoderByte.API.Controllers
             var identity = await GetClaimsIdentity(credentials.EmployeeNumber, credentials.Password);
             if (identity == null)
             {
-                return BadRequest(Errors.AddErrorToModelState("login_failure", "The EmployeeNumber/Password combination that you've entered doesn't match any account.Sign up for and account.", ModelState));
+                return BadRequest(Errors.AddErrorToModelState("login_failure", "The EmployeeNumber/Password combination that you've entered doesn't match any account.Sign up for an account.", ModelState));
             }
 
             // Serialize and return the response
